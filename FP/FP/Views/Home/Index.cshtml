@@ -1,7 +1,17 @@
-﻿
+﻿@model IEnumerable<FP.Models.Druzyna>
+
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
 
+<ul>
+    @foreach (var druzyna in Model)
+    {
+        <li>@druzyna.Nazwa</li>
+        <li>@druzyna.Kraj</li>
+        <li>@druzyna.StanKonta</li>
+        
+    }
+</ul>

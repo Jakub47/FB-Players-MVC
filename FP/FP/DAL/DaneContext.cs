@@ -14,8 +14,11 @@ namespace FP.DAL
         {
 
         }
-
-        
+        //Create A Records in Databse that was generated in database
+        static DaneContext()
+        {
+            Database.SetInitializer<DaneContext>(new DaneInitializer());
+        }
 
         public virtual DbSet<Druzyna> Druzyna { get; set; }
         public virtual DbSet<Pilkarz> Pilkarz { get; set; }

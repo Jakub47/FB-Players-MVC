@@ -18,7 +18,6 @@ namespace FP.Models
         public string Nazwisko { get; set; }
         [Required(ErrorMessage = "Wprowadz Wiek")]
         public int Wiek { get; set; }
-        public int DataDoloczenia { get; set; }
         public decimal Wartosc { get; set; }
         public bool NaSprzedarz { get; set; }
         public string Zdjecie { get; set; }

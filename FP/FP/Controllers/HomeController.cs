@@ -14,13 +14,8 @@ namespace FP.Controllers
 
         public ActionResult Index()
         {
-            //TESTING DATABASE
-            Druzyna dk = new Druzyna { Nazwa = "dsad",StanKonta = 599,Kraj = "Polska" };
-            db.Druzyna.Add(dk);
-            db.SaveChanges();
-            //TESTING DATABASE
-
-            return View();
+            var listaDruzyn = db.Druzyna.ToList();
+            return View(listaDruzyn);
         }
     }
 }
