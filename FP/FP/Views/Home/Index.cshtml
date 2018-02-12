@@ -1,17 +1,29 @@
-﻿@model IEnumerable<FP.Models.Druzyna>
+﻿@model FP.ViewModel.HomeViewModel
+@using FP.Infrastucture
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Nowości</h2>
 
 <ul>
-    @foreach (var druzyna in Model)
+    @foreach (var naSprzedarz in Model.Najdrozsi)
     {
-        <li>@druzyna.Nazwa</li>
-        <li>@druzyna.Kraj</li>
-        <li>@druzyna.StanKonta</li>
-        
+        <li>
+            <a href="@Url.Action("Pokaz","Pilkarz",new { nazwisko = naSprzedarz.Nazwisko,imie = naSprzedarz.Imie })">@naSprzedarz.Imie - @naSprzedarz.Nazwisko</a>
+            <img src="@Url.ZdjeciaSciezka(naSprzedarz.Zdjecie)"/>
+        </li>
+    }
+</ul>
+
+<br/>
+<ul>
+    @foreach (var Druzyna in Model.DruzynyChcaceKupic)
+    {
+        <li>
+            <a href="@Url.Action("Kupno","Druzyna",new { nazwa = Druzyna.Nazwa })">@Druzyna.Nazwa</a>
+            <img src="@Url.GodloSciezka(Druzyna.NazwaObrazkuGodla)"/>
+        </li>
     }
 </ul>

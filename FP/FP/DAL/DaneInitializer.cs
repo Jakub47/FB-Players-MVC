@@ -4,12 +4,14 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using FP.Models;
+using FP.Migrations;
+using System.Data.Entity.Migrations;
 
 namespace FP.DAL
 {
-    public class DaneInitializer : DropCreateDatabaseAlways<DaneContext>
+    public class DaneInitializer : MigrateDatabaseToLatestVersion<DaneContext,Configuration>
     {
-        protected override void Seed(DaneContext context)
+        public static void SeedDane(DaneContext context)
         {
             var druzyna = new List<Druzyna>
             {
@@ -22,7 +24,7 @@ namespace FP.DAL
                 new Druzyna() { DruzynaId=7, Nazwa="Shhot",      StanKonta=2500,   Kraj="Italy"   ,NazwaObrazkuGodla = "Shhot.png"}
             };
 
-            druzyna.ForEach(d => context.Druzyna.Add(d));
+            druzyna.ForEach(d => context.Druzyna.AddOrUpdate(d));
             context.SaveChanges();
 
             var pilkarze = new List<Pilkarz>
@@ -39,7 +41,7 @@ namespace FP.DAL
                 new Pilkarz() { PilkarzId = 10, DruzynaId=6, Imie="Nathan", Nazwisko="Drake", Wiek=37,Wartosc = 2000,NaSprzedarz = true, Zdjecie="Nathan_Drake.png"},
 
             };
-            pilkarze.ForEach(p => context.Pilkarz.Add(p));
+            pilkarze.ForEach(p => context.Pilkarz.AddOrUpdate(p));
             context.SaveChanges();
 
         }

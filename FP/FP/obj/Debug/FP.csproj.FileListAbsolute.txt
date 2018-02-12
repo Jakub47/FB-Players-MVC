@@ -35,3 +35,5 @@ C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-M
 C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\obj\Debug\FP.csprojResolveAssemblyReference.cache
 C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\obj\Debug\FP.dll
 C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\obj\Debug\FP.pdb
+C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\obj\Debug\FP.Migrations.InitialCreate.resources
+C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\obj\Debug\FP.csproj.GenerateResource.Cache
