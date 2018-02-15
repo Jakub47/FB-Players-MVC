@@ -1,0 +1,14 @@
+﻿@model IEnumerable<FP.Models.Druzyna>
+@using FP.Infrastucture
+
+<nav class="navbar">
+    <ul>
+        @foreach(var druzyna in Model)
+        {
+            <li>
+                <!--Add an image for a specific country-->
+                <a href="@Url.Action("Lista","Pilkarz",new { kraj = druzyna.Kraj })">@druzyna.Kraj</a>
+            </li>
+        }
+    </ul>
+</nav>

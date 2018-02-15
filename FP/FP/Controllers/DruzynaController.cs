@@ -22,5 +22,12 @@ namespace FP.Controllers
             var druzyna = db.Druzyna.Where(a => a.Nazwa == nazwa).Single();
             return View(druzyna);
         }
+
+        [ChildActionOnly]
+        public ActionResult DruzynyMenu()
+        {
+            var druzyna = db.Druzyna.ToList();
+            return PartialView("_DruzynyMenu", druzyna);
+        }
     }
 }

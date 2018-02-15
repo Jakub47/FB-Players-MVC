@@ -1,0 +1,15 @@
+﻿@model IEnumerable<FP.Models.Pilkarz>
+
+@{
+    ViewBag.Title = "Lista";
+}
+@Html.MvcSiteMap().SiteMapPath();
+<ul>
+    @foreach (var pilkarz in Model)
+    {
+        <li>
+            @pilkarz.Imie
+            @pilkarz.Nazwisko
+        </li>
+    }
+</ul>

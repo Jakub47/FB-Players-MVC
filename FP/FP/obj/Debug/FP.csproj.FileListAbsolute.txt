@@ -37,3 +37,8 @@ C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-M
 C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\obj\Debug\FP.pdb
 C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\obj\Debug\FP.Migrations.InitialCreate.resources
 C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\obj\Debug\FP.csproj.GenerateResource.Cache
+C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\bin\MvcSiteMapProvider.dll
+C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\bin\MvcSiteMapProvider.WebActivator.dll
+C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\bin\WebActivatorEx.dll
+C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\bin\MvcSiteMapProvider.xml
+C:\Users\Ragnus\Desktop\ASP.NET - DYNAMIC WEBsites\Football-players\FB-Players-MVC\FP\FP\bin\MvcSiteMapProvider.WebActivator.xml
